@@ -1,3 +1,4 @@
+_G.ISAttaching = true
 local border = Color3.fromRGB(103,103,103)
 local blueredCenter = Color3.fromRGB(36, 33, 193)
 local num = UDim2.new(0, 0, 0, 0)
@@ -284,6 +285,7 @@ if Attach == true then
 			attachservice:TweenPosition(firstpos)
 			wait(5)
 			attachserviceframerange:Destroy()
+			_G.ISAttaching = false
 		end
 	end
 end
