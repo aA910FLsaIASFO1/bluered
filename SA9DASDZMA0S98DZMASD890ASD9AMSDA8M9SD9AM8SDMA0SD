@@ -36,6 +36,30 @@ local attachprogress = Instance.new("TextLabel")
 local backprogress = Instance.new("Frame")
 local progress = Instance.new("Frame")
 
+local stroke = Instance.new("UIStroke")
+stroke.Color = Color3.fromRGB(70, 70, 70)
+stroke.Thickness = 1.6
+stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+
+stroke.Parent = deco01
+local st2 = stroke:Clone()
+local st3 = stroke:Clone()
+local st4 = stroke:Clone()
+local st5 = stroke:Clone()
+local st6 = stroke:Clone()
+local st7 = stroke:Clone()
+local st8 = stroke:Clone()
+local st9 = stroke:Clone()
+
+st2.Parent = deco02
+st3.Parent = deco03
+st4.Parent = deco04
+st5.Parent = deco05
+st6.Parent = deco06
+st7.Parent = deco07
+st8.Parent = deco08
+st9.Parent = deco09
+
 
 --Properties:
 
