@@ -3,7 +3,6 @@ local border = Color3.fromRGB(103,103,103)
 local blueredCenter = Color3.fromRGB(36, 33, 193)
 local num = UDim2.new(0, 0, 0, 0)
 
-_G.Attach = true
 local draggedpos = UDim2.new(0.0891265571, 0, -0.114754096, 0)
 
 
@@ -246,16 +245,16 @@ progress.BorderSizePixel = 0
 progress.Position = UDim2.new(-1.15, 0, 0, 0)
 progress.Size = UDim2.new(0, 430, 0, 12)
 progress.ZIndex = 3
-print("A")
+
 local a = 0.05
 local firstpos = UDim2.new(0.0891265571, 0, -1, 0)
 
 if _G.Attach == true then
-	print("B")
+	
 	attachservice:TweenPosition(draggedpos)
 	wait(1)
 	if attachservice.Position == draggedpos then
-		print("C")
+		
 		progress:TweenPosition(num)
 		wait(a)
 		deco01.BackgroundColor3 = blueredCenter
@@ -291,7 +290,6 @@ if _G.Attach == true then
 			wait(2)
 			attachservice:TweenPosition(firstpos)
 			wait(5)
-			print("E")
 			attachserviceframerange:Destroy()
 			_G.Attach = false
 		end
