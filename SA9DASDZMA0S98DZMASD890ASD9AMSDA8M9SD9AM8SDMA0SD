@@ -1,4 +1,4 @@
-local a = Instance.new("ScreenGui")
+
 local border = Color3.fromRGB(103,103,103)
 local blueredCenter = Color3.fromRGB(36, 33, 193)
 local num = UDim2.new(0, 0, 0, 0)
@@ -36,12 +36,11 @@ local attachprogress = Instance.new("TextLabel")
 local backprogress = Instance.new("Frame")
 local progress = Instance.new("Frame")
 
-a.Parent = game.CoreGui
 
 --Properties:
 
 attachserviceframerange.Name = "S0AD8MZAS8D9MZASJF"
-attachserviceframerange.Parent = a
+attachserviceframerange.Parent = _G.PARENT
 attachserviceframerange.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 attachserviceframerange.BackgroundTransparency = 1
 attachserviceframerange.BorderSizePixel = 0
