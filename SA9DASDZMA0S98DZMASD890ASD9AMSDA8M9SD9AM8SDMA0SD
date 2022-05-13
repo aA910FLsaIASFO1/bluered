@@ -243,13 +243,12 @@ progress.Position = UDim2.new(-1.01435411, 0, 0, 0)
 progress.Size = UDim2.new(0, 430, 0, 12)
 progress.ZIndex = 3
 local Attach = true
-local a = 0.5
+local a = 0.2
 local firstpos = UDim2.new(0.0891265571, 0, -1, 0)
 local decors = deco01 and deco02 and deco03 and deco04 and deco05 and deco06 and deco07 and deco08 and deco09
 
 if Attach == true then
 	attachservice:TweenPosition(draggedpos)
-	wait(1)
 	if attachservice.Position == draggedpos then
 		progress:TweenPosition(num)
 		wait(a)
@@ -272,8 +271,16 @@ if Attach == true then
 		deco09.BackgroundColor3 = blueredCenter
 		if progress.Position == num then
 			progress.BackgroundColor3 = greenpro
-			decors.BackgroundColor3 = greencenter
-			wait(3)
+			deco01.BackgroundColor3 = greencenter
+			deco02.BackgroundColor3 = greencenter
+			deco03.BackgroundColor3 = greencenter
+			deco04.BackgroundColor3 = greencenter
+			deco05.BackgroundColor3 = greencenter
+			deco06.BackgroundColor3 = greencenter
+			deco07.BackgroundColor3 = greencenter
+			deco08.BackgroundColor3 = greencenter
+			deco09.BackgroundColor3 = greencenter
+			wait(2)
 			attachservice:TweenPosition(firstpos)
 			wait(5)
 			attachserviceframerange:Destroy()
