@@ -248,7 +248,7 @@ local a = 0.2
 local firstpos = UDim2.new(0.0891265571, 0, -1, 0)
 local decors = deco01 and deco02 and deco03 and deco04 and deco05 and deco06 and deco07 and deco08 and deco09
 
-if Attach == true then
+if _G.Attach == true then
 	attachservice:TweenPosition(draggedpos)
 	if attachservice.Position == draggedpos then
 		progress:TweenPosition(num)
@@ -285,7 +285,7 @@ if Attach == true then
 			attachservice:TweenPosition(firstpos)
 			wait(5)
 			attachserviceframerange:Destroy()
-			_G.ISAttaching = false
+			_G.Attach = false
 		end
 	end
 end
