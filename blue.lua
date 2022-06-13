@@ -819,7 +819,7 @@ attach.MouseButton1Click:Connect(function()
   if _G.SynXAttach == false
  then
      if _G.SynXAttaching == false then
-	      loadstring(game:HttpGet("https://raw.githubusercontent.com/aA910FLsaIASFO1/bluered/main/SA9DASDZMA0S98DZMASD890ASD9AMSDA8M9SD9AM8SDMA0SD"))()
+	       loadstring(game:HttpGet("https://raw.githubusercontent.com/aA910FLsaIASFO1/bluered/main/0f0f9f001394859487.lua"))()
     end
   end
 end)
