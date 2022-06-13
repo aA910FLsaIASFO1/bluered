@@ -1,7 +1,7 @@
 _G.SynXAttach = false
 _G.SynXAttaching = false
 
-_G.SVersion = '0.1.3' print(_G.SVersion)
+_G.SVersion = '0.1.4' print(_G.SVersion)
 
 local blue = Instance.new("ScreenGui")
 local synapseblue = Instance.new("Frame")
