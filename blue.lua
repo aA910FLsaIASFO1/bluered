@@ -1,7 +1,7 @@
 _G.SynXAttach = false
 _G.SynXAttaching = false
-_G.SVersion = '0.1.3'
-print(_G.SVersion)
+
+_G.SVersion = '0.1.3' print(_G.SVersion)
 
 local blue = Instance.new("ScreenGui")
 local synapseblue = Instance.new("Frame")
@@ -74,7 +74,7 @@ local open = Instance.new("ImageButton")
 local UICorner_4 = Instance.new("UICorner")
 local opnIco = Instance.new("ImageLabel")
 local UIGradient_3 = Instance.new("UIGradient")
-_G.PARENT = synapseblue
+
 
 --Properties:
 
@@ -89,6 +89,7 @@ synapseblue.BorderSizePixel = 0
 synapseblue.Position = UDim2.new(0.222420096, 0, 0.251245826, 0)
 synapseblue.Size = UDim2.new(0, 561, 0, 45)
 synapseblue.Draggable = true
+_G.PARENT = synapseblue
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(234, 234, 234)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(200, 200, 200))}
 UIGradient.Rotation = 90
@@ -817,13 +818,14 @@ a2clear.MouseButton1Click:Connect(function()
 end)
 
 attach.MouseButton1Click:Connect(function()
-  if _G.SynXAttach == false
- then
+  if _G.SynXAttach == false then
      if _G.SynXAttaching == false then
-	       loadstring(game:HttpGet("https://raw.githubusercontent.com/aA910FLsaIASFO1/bluered/main/0f0f9f001394859487.lua"))()
+	      loadstring(game:HttpGet("https://raw.githubusercontent.com/aA910FLsaIASFO1/bluered/main/0f0f9f001394859487.lua"))()
+          print('Attaching')
     end
   end
 end)
+
 
 
 
