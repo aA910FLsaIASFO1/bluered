@@ -1,7 +1,7 @@
 _G.SynXAttach = false
 _G.SynXAttaching = false
 
-_G.SVersion = '0.1.4' print(_G.SVersion)
+_G.SVersion = '0.1.5' print(_G.SVersion)
 
 local blue = Instance.new("ScreenGui")
 local synapseblue = Instance.new("Frame")
@@ -294,6 +294,7 @@ buttonstab.Size = UDim2.new(0, 371, 0, 28)
 UIListLayout_4.Parent = buttonstab
 UIListLayout_4.FillDirection = Enum.FillDirection.Horizontal
 UIListLayout_4.Padding = UDim.new(0, 7)
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
 
 a1exec.Name = "0D98AS9Z8ASDZ08MASD9Z8MASD8M9AD"
 a1exec.Parent = buttonstab
@@ -305,6 +306,7 @@ a1exec.Font = Enum.Font.SourceSans
 a1exec.Text = "Execute"
 a1exec.TextColor3 = Color3.fromRGB(220, 220, 220)
 a1exec.TextSize = 14.000
+a1exec.LayoutOrder = 1
 
 a4savefile.Name = "0DAS8ZMAS0ZD9MASDZ098AMSDZ0MA98D"
 a4savefile.Parent = buttonstab
@@ -317,6 +319,7 @@ a4savefile.Font = Enum.Font.SourceSans
 a4savefile.Text = "Save File"
 a4savefile.TextColor3 = Color3.fromRGB(220, 220, 220)
 a4savefile.TextSize = 14.000
+a4savefile.LayoutOrder = 4
 
 a2clear.Name = "0AD9SZMAD9Z8MASD0Z9MASD8Z09ASDZ890MA"
 a2clear.Parent = buttonstab
@@ -329,6 +332,7 @@ a2clear.Font = Enum.Font.SourceSans
 a2clear.Text = "Clear"
 a2clear.TextColor3 = Color3.fromRGB(220, 220, 220)
 a2clear.TextSize = 14.000
+a2clear.LayoutOrder = 2
 
 a3ofile.Name = "A0SD8MA0D98ZAS098DMZA0S9MDZMA90SZD"
 a3ofile.Parent = buttonstab
@@ -341,6 +345,7 @@ a3ofile.Font = Enum.Font.SourceSans
 a3ofile.Text = "Open File"
 a3ofile.TextColor3 = Color3.fromRGB(220, 220, 220)
 a3ofile.TextSize = 14.000
+a3ofile.LayoutOrder = 3 
 
 editordec.Name = "ADSA09SM8DZA890MSDZAM809SD9ZMA"
 editordec.Parent = executor
@@ -808,7 +813,7 @@ open.MouseButton1Click:Connect(function()
 end)
 
 a1exec.MouseButton1Click:Connect(function()
- if _G.Attach == true then
+ if _G.SynXAttach == true then
 	  loadstring(textbox1.Text)()
  end
 end)
